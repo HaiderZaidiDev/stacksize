@@ -14,14 +14,15 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+![Screenshot](https://i.imgur.com/5E1FPA4.png)
 
-For taking the plunge into mobile development; I decided to solve a quick problem I faced on the weekly: calculating my stack size in poker. After winning a big hand (or loosing most of my stack) I found myself keeping track of my stack size on the iOS notes app while doing manual calculations. For an elegant and minimalistic solution, I created this!
+For taking the plunge into mobile development; I decided to solve a problem I faced: calculating my stack (total value of all chips) in poker. Rather than keeping track of the stack in the iOS notes app, I created this as a more elegant solution.
+
 
 Features:
 * Swiftly get the total value of all your chips; combined with basic strategy, you can make more informed decisions on the table.
 
-[ ] Calculate profits (or lack thereof).
+- [ ] Calculate profits (or lack thereof).
 
 
 ### Built With
@@ -45,7 +46,7 @@ This is an example of how to list things you need to use the software and how to
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/HaiderZaidiDev/stacksize
    ```
 2. Install NPM packages
    ```sh
