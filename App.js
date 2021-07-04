@@ -1,7 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
 import React, { useState, useEffect } from 'react';
 import { StyleSheet, Text, TextInput, View } from 'react-native';
-import { useFonts, Poppins_300Light, Poppins_600SemiBold, Inter_600SemiBold} from '@expo-google-fonts/dev';
+import { useFonts, Poppins_300Light, Poppins_600SemiBold} from '@expo-google-fonts/poppins';
+import {Inter_600SemiBold} from '@expo-google-fonts/inter';
 import ChipForms from './ChipForms'
 import ChipStack from './ChipStack'
 
@@ -9,9 +10,9 @@ import ChipStack from './ChipStack'
 const Home = () => {
   // Loading Google fonts.
   let [fontsLoaded] = useFonts({
-    Poppins_600SemiBold,
-    Poppins_300Light,
-    Inter_600SemiBold,
+    "Poppins-SemiBold": Poppins_600SemiBold,
+    "Poppins-Light":  Poppins_300Light,
+    "Inter-SemiBold":  Inter_600SemiBold,
   })
   var [balance, setBalance] = useState(0);
   const [chips, setChips] = useState(ChipStack);
@@ -44,7 +45,7 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-start',
   },
   title: {
-    fontFamily: "Inter_600SemiBold",
+    fontFamily: "Inter-SemiBold",
     marginTop: 75,
     marginLeft: 25,
     fontSize: 40,
@@ -53,7 +54,7 @@ const styles = StyleSheet.create({
     width: '85%',
   },
   balance: {
-    fontFamily: "Poppins_300Light",
+    fontFamily: "Poppins-Light",
     marginTop: 75,
     marginBottom: 75,
     alignItems: 'flex-start',
