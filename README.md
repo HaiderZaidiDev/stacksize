@@ -20,6 +20,7 @@ For taking the plunge into mobile development; I decided to solve a quick proble
 
 Features:
 * Swiftly get the total value of all your chips; combined with basic strategy, you can make more informed decisions on the table.
+
 [ ] Calculate profits (or lack thereof).
 
 
@@ -30,8 +31,7 @@ I went with React Native (was already familiar with React, and thought it was pr
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+Looking to demo the app yourself? Check this part out.
 
 ### Prerequisites
 
@@ -62,10 +62,3 @@ Contributions are welcome, feel free to make a PR!
 3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
-
-
-
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
