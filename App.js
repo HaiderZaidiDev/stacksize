@@ -2,11 +2,12 @@ import { StatusBar } from 'expo-status-bar';
 import React, { useState, useEffect } from 'react';
 import { StyleSheet, Text, TextInput, View } from 'react-native';
 import { useFonts, Poppins_300Light, Poppins_500Medium, Poppins_600SemiBold} from '@expo-google-fonts/poppins';
-import ChipForms from './ChipForms'
-import ChipStack from './ChipStack'
+import ChipForms from './Components/ChipForms'
+import ChipStack from './Components/ChipStack'
 
 
 const Home = () => {
+  /* Calculating and rendering the user's total chip balance. */
   // Loading Google fonts.
   let [fontsLoaded] = useFonts({
     "Poppins-SemiBold": Poppins_600SemiBold,
@@ -15,7 +16,10 @@ const Home = () => {
   })
   var [balance, setBalance] = useState(0);
   const [chips, setChips] = useState(ChipStack);
+
   useEffect(() => {
+    /* Iterating through the chip stack, calculating total balance of the user's
+    chips upoin an update to the stack. */
     var currentBalance = 0
     for (const [key, chip] of Object.entries(chips)) {
       currentBalance += chip.balance
