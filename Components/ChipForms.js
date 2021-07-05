@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import React, { useState } from 'react';
 import { StyleSheet, Text, TextInput, Label, View } from 'react-native';
-import { useFonts, Poppins_300Light, Poppins_500Medium, PTSans_400Regular } from '@expo-google-fonts/dev';
+import { useFonts, Poppins_300Light, Poppins_500Medium, Poppins_600SemiBold} from '@expo-google-fonts/poppins';
 
 
 const ChipForms = (props) => {
@@ -15,9 +15,9 @@ const ChipForms = (props) => {
       Hook to update chips.
   */
   let [fontsLoaded] = useFonts({
-    PTSans_400Regular,
-    Poppins_500Medium,
-    Poppins_300Light,
+    "Poppins-SemiBold": Poppins_600SemiBold,
+    "Poppins-Medium": Poppins_500Medium,
+    "Poppins-Light":  Poppins_300Light,
   })
 
   const chips = [
@@ -96,7 +96,7 @@ const styles = {
   },
   chipAmntForm: {
     paddingLeft: 10,
-    fontFamily: "Poppins_300Light",
+    fontFamily: "Poppins-Light",
     width: 312,
     height: 40,
     backgroundColor: '#181818',
@@ -105,7 +105,7 @@ const styles = {
   },
   label: {
     fontSize: 12,
-    fontFamily:"Poppins_500Medium",
+    fontFamily:"Poppins-Medium",
   },
 
 };

@@ -20,7 +20,7 @@ For taking the plunge into mobile development; I decided to solve a problem I fa
 
 
 Features:
-- [x]Swiftly get the total value of all your chips; combined with basic strategy, you can make more informed decisions on the table.
+- [x] Swiftly get the total value of all your chips; combined with basic strategy, you can make more informed decisions on the table.
 
 - [ ] Calculate profits (or lack thereof).
 
@@ -51,7 +51,12 @@ This is an example of how to list things you need to use the software and how to
 2. Install NPM packages
    ```sh
    npm install
+   npm install --global expo-cli
    ```
+3. Run expo
+  ```sh
+  npm start
+  ```
 
 <!-- CONTRIBUTING -->
 ## Contributing
