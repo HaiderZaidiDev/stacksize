@@ -16,7 +16,7 @@
 
 ![Screenshot](https://i.imgur.com/5E1FPA4.png)
 
-For taking the plunge into mobile development; I decided to solve a problem I faced: calculating my stack (total value of all chips) in poker. Rather than keeping track of the stack in the iOS notes app, I created this as a more elegant solution.
+For taking the plunge into mobile development; I decided to solve a problem I faced: calculating my stack (total value of all chips) in poker. Rather than keeping track of the stack in the iOS notes app (or using increments like a normal person), I created this as a more elegant solution (a.k.a an excuse to make an app).
 
 
 Features:
@@ -34,16 +34,8 @@ Opted for React Native, as I'm already familiar with React. For the development 
 
 Looking to demo the app yourself? Check this part out.
 
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
 ### Installation
-
+Ensure you have the latest version of Node.js, [found here](https://nodejs.org/en/).
 1. Clone the repo
    ```sh
    git clone https://github.com/HaiderZaidiDev/stacksize
@@ -53,7 +45,7 @@ This is an example of how to list things you need to use the software and how to
    npm install
    npm install --global expo-cli
    ```
-3. Run expo
+3. Run expo (you may be prompted to auto-install additional dependencies here, please do so)
   ```sh
   npm start
   ```
